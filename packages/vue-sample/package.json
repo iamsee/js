@@ -7,7 +7,7 @@
     "precommit": "lint-staged",
     "start": "vite",
     "check": "vue-tsc --noEmit",
-    "build": "pnpm check && rm -rf dist && vite build",
+    "build": "pnpm check && rimraf dist && vite build",
     "lint": "eslint --ext .vue,.ts src"
   },
   "dependencies": {

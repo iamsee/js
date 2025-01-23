@@ -31,7 +31,7 @@
     "dev:tsc": "tsc -p tsconfig.build.json -w --preserveWatchOutput",
     "precommit": "lint-staged",
     "check": "tsc --noEmit",
-    "build": "rm -rf lib/ && tsc -p tsconfig.build.json --noEmit && rollup -c",
+    "build": "rimraf lib/ && tsc -p tsconfig.build.json --noEmit && rollup -c",
     "lint": "eslint --ext .ts src",
     "test": "vitest",
     "test:coverage": "vitest --silent --coverage",

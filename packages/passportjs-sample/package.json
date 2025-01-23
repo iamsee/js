@@ -7,7 +7,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "start": "npm run build && node lib/app.js",
-    "build": "rm -rf lib/ && tsc",
+    "build": "rimraf lib/ && tsc",
     "lint": "eslint --ext .ts src"
   },
   "dependencies": {

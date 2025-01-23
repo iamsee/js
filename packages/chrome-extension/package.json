@@ -17,7 +17,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "build": "rm -rf lib && tsc",
+    "build": "rimraf lib && tsc",
     "lint": "eslint --ext .ts --ext .tsx src",
     "prepack": "pnpm build"
   },

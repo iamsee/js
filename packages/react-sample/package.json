@@ -7,7 +7,7 @@
     "precommit": "lint-staged",
     "start": "parcel src/index.html -p 3000",
     "check": "tsc --noEmit",
-    "build": "pnpm check && rm -rf dist && parcel build src/index.html --no-autoinstall",
+    "build": "pnpm check && rimraf dist && parcel build src/index.html --no-autoinstall",
     "lint": "eslint --ext .ts --ext .tsx src",
     "stylelint": "stylelint \"src/**/*.scss\""
   },

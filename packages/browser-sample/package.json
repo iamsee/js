@@ -7,7 +7,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "start": "parcel public/index.html -p 3000",
-    "build": "rm -rf dist && parcel build public/index.html --no-autoinstall",
+    "build": "rimraf dist && parcel build public/index.html --no-autoinstall",
     "lint": "eslint --ext .js src",
     "stylelint": "stylelint \"src/**/*.scss\""
   },
